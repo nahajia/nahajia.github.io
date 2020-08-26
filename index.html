@@ -16,11 +16,30 @@
 
       <p id="demo"></p>
 
+
+      <label for="fname">szam1:</label>
+      <input type="text" id="szam1" name="fname"> 
+
+      <label for="fname">szam2:</label>
+      <input type="text" id="szam2" name="fname"> 
+
+      <button onclick="osszeg()">The time is?</button> 
+      <p id="kimenet"></p>
+
       <script>
       function myFunction(p1, p2) {
         return p1 * p2;
       }
       document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+
+
+
+      function osszeg(p1, p2) {
+        szam1=document.getElementById("szam1");
+        szam2=document.getElementById("szam2");
+        document.getElementById("kimenet").innerHTML = szam1+szam2;
+      }
       </script>
 </body>
 </html>

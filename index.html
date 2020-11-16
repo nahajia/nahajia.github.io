@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pisti</title>
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+
+
 </head>
 <body>  
-    <input type="text" id="szam1">
-    <input type="text" id="szam2">
-    <button onclick="osszeadas()">Összeadás</button>
-    <span id="kimenet"></span>
+    <center><h1>Összeadás</h1></center>
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            1.szám:
+            <input type="text" id="szam1" class="form-control" style="margin:10px">
+            2.szám:
+            <input type="text" id="szam2" class="form-control" style="margin:10px">
+            <center>
+                <button onclick="osszeadas()"  class="btn btn-primary" style="margin:10px" >Összeadás</button>
+                <br>
+                Eredmény:
+                <span id="kimenet"></span>
+
+            </center>
+            
+           
+        </div>
+        <div class="col-sm-4"></div>
+      </div> 
+
+    
+
     <script>
         function osszeadas()
         {

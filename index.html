@@ -4,67 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+
+    <link rel="stylesheet" href="sajat.css">
 </head>
 <body>
-  hhhhhhhhhhhhhhhhhhh
-    valami
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ul> 
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="cigi.jpg" alt="" style="height: 80px;">
+        </div>
+        <div class="col-sm-4">
+            Cigik száma, amit elszívsz egy nap:
+    <input type="" id="cigidb"><br>
+    Dobozban hány cigi van:
+    <input type="text" id="cigidoboz"><br>
+    Doboz ára:
+    <input type="text" id="cigiar"><br>
+    <button onclick="szamol()">Számítás</button>
+
+    <span id="koltseg"></span>
+        </div>
+        <div class="col-sm-4">
+            <img src="cigi.jpg" alt="" style="height: 80px;">
+        </div>
+      </div>
+   
+   
     
 
-      <table style="width:100%">
-        <tr>
-          <th>ggggggggggggggg</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table> 
+<script>
+    function szamol()
+    {
+        var cigidb=document.getElementById("cigidb").value;
+        var cigidoboz=document.getElementById("cigidoboz").value;
+        var cigiar=document.getElementById("cigiar").value;
+        
+        document.getElementById('koltseg').innerHTML = (cigidb*365)/cigidoboz*cigiar;
+    }
+</script>
 
-
-
-
-
-
-
-      <p id="demo"></p>
-
-
-      <label for="fname">szam1:</label>
-      <input type="text" id="szam1" name="fname"> 
-
-      <label for="fname">szam2:</label>
-      <input type="text" id="szam2" name="fname"> 
-
-      <button onclick="osszeg()">The time is?</button> 
-      <p id="kimenet"></p>
-
-      <script>
-      function myFunction(p1, p2) {
-        return p1 * p2;
-      }
-      document.getElementById("demo").innerHTML = myFunction(4, 3);
-
-
-
-
-      function osszeg(p1, p2) {
-        szam1=parseInt(document.getElementById("szam1").value);
-        szam2=parseInt(document.getElementById("szam2").value);
-        document.getElementById("kimenet").innerHTML = szam1+szam2;
-      }
-      </script>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Film</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="backgrounds.js"></script>
+<style>
+    .doboz{
+        border:1px solid black;
+        box-shadow: 2px 2px black;
+        margin: 10px;
+        padding: 10px; 
+        width: 250px;
+        text-align: center;
+    }
+       
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <header><h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p></header>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              
+            </ul>
+          </nav>
+              
+    <div class="row" id="ide">
+    </div>
+  </div>
+
+<script>
+console.log(adatok);
+for(elem of adatok)
+{
+    var div = document.createElement("div");
+    
+    document.getElementById("ide").appendChild(div);
+    div.setAttribute("class","col-sm-6 col-md-6");
+    div.appendChild(document.createElement("br"));
+    var img = document.createElement("img");
+    div.appendChild(img);
+    img.setAttribute("src",elem);
+    img.setAttribute("class","img-thumbnail kep");
+    
+}
+
+</script>
+
+</body>
+</html>

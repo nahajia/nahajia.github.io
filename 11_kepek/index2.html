@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    <script src="wallpapers.js"></script>
+
+    <style>
+        .kep{
+            width: 400px;
+            border:1px solid black;
+            box-shadow: 5px 5px black;
+        }
+        .keret{
+            text-align: center;
+            padding:10px;
+           
+        }
+        .szovegstilus{
+          font-size: 20px;
+          font-style:italic;
+          font-family: fantasy;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <header>
+            <h1>Képek nézegetése</h1>
+            <p>JS DOM gyakorlás</p>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Navbar</a>
+              
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>  
+              <div class="row" id="ide">
+                
+              </div>         
+          </header>      
+
+
+
+      </div>
+
+
+ 
+
+<script>
+
+console.log(adatok2);
+var ide=document.getElementById("ide");
+for (elem of adatok2.wallpapers){
+    var div=document.createElement("div");
+    ide.appendChild(div);
+    div.setAttribute("class","col-sm-6 keret");
+    var img=document.createElement("img");
+    div.appendChild(img);
+    img.setAttribute("src",elem.url);
+    img.setAttribute("class","kep");
+    var br=document.createElement("br");
+    div.appendChild(br);
+    var szoveg=document.createElement("span");
+    div.appendChild(szoveg);
+    szoveg.innerHTML=elem.name;
+    szoveg.setAttribute("class","szovegstilus");
+}
+
+</script>
+
+
+
+</body>
+</html>

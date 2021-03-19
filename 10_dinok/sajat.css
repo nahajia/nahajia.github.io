@@ -1,0 +1,22 @@
+body{
+    background-image: url("johatter.png");
+    background-size: 100%;
+}
+
+#dinonev
+{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+#dinokep
+{
+    margin-top: 20px;
+    margin-bottom: 20px;   
+    box-shadow: 5px 10px rgb(98, 211, 98);
+}
+#dinoleiras
+{
+    border:1px solid black;
+}

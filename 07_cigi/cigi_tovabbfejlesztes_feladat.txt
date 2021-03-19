@@ -1,6 +1,0 @@
-A csatolt fájlt  alakítsd tovább!
-1. Egy hétre is számolja ki, mennyibe kerül a dohányzás
-2. Intelligens, szép szövegeket írass ki
-3. Designold egyénileg: bootstrap, grid, képeket rakj bele, hátteret....
-4. Ügyesebbek kezeljék le, hogy hibát írjon ha betût adsz meg!
-5. Ügyesebbek átalakíthatják, hogy ne input type text legyen benne....

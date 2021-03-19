@@ -1,0 +1,19 @@
+Ha JSon-t akarsz elérni úgy keress rá Api.... van ahol regisztrálni kell...
+Pl. gugliba: films api 
+
+Rapidapi lapról töltünk le.
+
+1. gugliba: Rapidapi , beregisztrálni, belépni
+2. IMDb - filmeket fogunk fetch-el elérni
+3. középen kihozza az adatokat
+4.  test endpointra json-t mutat, alul lehet a keresési szót változtatni game of thr
+5. code snippets fülnél : Javascript/fetch
+6. letöltjük, api key van benne, konzolra kiírja
+7. elõzõ órán tanult w3-as fetch-et megnézzük 
+8. json() - konvertáljuk, utána then, konzolra
+9. konzol helyett függvényt hívunk meg, paramétere a kapott json adatok
+10. adatok megjelenítése a lapon táblázatban, cím és kép
+11. beviteli mezõt tegyünk html-be és gombot-beírunk valamit azt keresse
+12. függvénybe kerül a fetch, a rapidapi-n azt keresse
+
+

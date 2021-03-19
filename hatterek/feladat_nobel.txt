@@ -1,2 +1,0 @@
-Nobel díjak:
-http://api.nobelprize.org/v1/prize.json

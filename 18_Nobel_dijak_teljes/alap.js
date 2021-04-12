@@ -19,7 +19,7 @@ function keres(){
 
     var kivalasztottev=lenyilo.value;
 
-    fetch("http://api.nobelprize.org/v1/prize.json")
+    fetch("https://api.nobelprize.org/v1/prize.json")
     .then(x => x.json())
     .then(adatok => megjelenit(adatok,kivalasztottev));
 

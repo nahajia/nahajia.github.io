@@ -1,0 +1,20 @@
+gugliba: Nobel prize api , azon belül api examples találat
+https://www.nobelprize.org/about/api-examples/
+a kódban ott a json url-je
+http://api.nobelprize.org/v1/prize.json
+
+1. Nobel díjak letöltése
+2. json serveren nobel díjak megjelenítése
+3. lenyíló lista weblapra, tegye bele pl. 2020-scriptben 
+script hivatjozás /body fölött
+4. aktuális dátum gugli: javascript getdate year, konzolra
+5. lenyíló option-jaiba évek 2021-tõl 1901-ig for, createelement, appendchild
+6. addeventlistener-el change, konzolra változtatáskor évet írja
+7. év változtatására div-be tegye a találatokat, ehhez fetch
+8. fetch-ben függvényhívás, option value lekérdezésével, paraméterátadás, 2 is
+9. szöveg felfúzés += vel, jsonbõl év keresése
+10. osztott Nobel díj esetén mindet, dupla for
+11. dizájnolás bootstrap-el, telepítve, táblázat
+
+12. átalakítás, url-cím (ne legyen json server használva)
+13. felrakni githubra

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid adatok</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stilus.css">
+
+</head>
+<body>
+    <div class="container">
+    <h1>Keresés covid adatok között</h1>
+    <label for="">Dátum</label>
+    <input type="date" class="form-control" id="datum">
+
+    <div class="row">
+        <div class="col-sm-6">
+
+            <label for="">Ország kódja:</label>
+            <input type="text" id="orszag_0" class="form-control" >
+           
+            <button class="btn btn-primary" onclick="kereses(0)"  >Keresés</button>
+            <div id="talalat_0"></div>
+
+
+        </div>
+        <div class="col-sm-6">
+
+            <label for="">Ország kódja:</label>
+            <input type="text" id="orszag_1" class="form-control" >
+           
+            <button class="btn btn-primary" onclick="kereses(1)"  >Keresés</button>
+            <div id="talalat_1"></div>
+
+
+
+
+
+        </div>
+      </div>   
+
+   
+
+   
+    </div>
+
+
+<script src="alap.js"></script>
+</body>
+</html>

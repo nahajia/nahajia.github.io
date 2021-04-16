@@ -1,0 +1,5 @@
+
+1. Dátum bekérése, input date-ben
+2. ország kód bekérése, beírni
+3. gombra millió fõre vetített
+ össz fertõzés, össz halálozás, össz oltottak, aznapi új fert., új halálozás

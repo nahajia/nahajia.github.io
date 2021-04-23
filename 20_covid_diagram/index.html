@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid diagram</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/plotly.js-dist/plotly.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Covid adatok ábrázolása</h1>
+        
+        <label for="">Egyik ország kódja( pl. HUN): </label>
+        <input type="text" id="orszag1" class="form-control">
+        <label for="">Másik ország kódja( pl. CZE): </label>
+        <input type="text" id="orszag2" class="form-control">
+         <button onclick="adatlekerdezes()"  class="btn btn-primary" style="margin:10px" >Diagram megrajzolása</button>
+
+         <div id="eredmeny"></div>
+
+
+         <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+
+        
+
+
+
+      </div>
+
+    
+
+
+
+
+<script src="alap.js"></script>
+</body>
+</html>

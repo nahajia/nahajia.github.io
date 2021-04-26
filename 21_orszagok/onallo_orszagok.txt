@@ -1,0 +1,4 @@
+
+1. Véletlenszerûen sorsold ki ország számát, írd ki nevét, zászlóját!
+2. Beviteli mezõben megtippelhetjük a népességét! 
+3. Gombra, ha 10%-on belül vagyunk gratuláljon, írja ki a jót!

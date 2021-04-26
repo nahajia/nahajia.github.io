@@ -1,0 +1,27 @@
+
+Országok adataival dolgozunk, élõ adatok-fetch-el dolgozunk!!!!
+gugliba: json api countries , elsõ találat, REST countries, azon belül ALL
+
+https://restcountries.eu/rest/v2/all
+
+index.html-alap.js
+
+1. Jelenítsük meg az országok nevét, zászlóját,  népességét, fõvárosát!
+2. Divbe kerüljön, közepes méretû eszközön egy sorban 3, kis eszközön 1.
+
+
+index2.html-alap2.js
+
+1. Lenyílóban jelenítsd meg az országok nevét!
+2. Ha kiválasztjuk change-re alatta az adatokat!
+
+
+index3.html-alap3.js
+
+1. Gombra véletlenszerûen sorsold ki országok számát, írd ki nevét, záazlóját!
+2. Beviteli mezõben lehessen beírni a fõváros nevét!
+3. Gombra ellenõrizze, ha jó gratuláljon! Írja ki a jót!
+
+
+
+Készítsünk menüt: 3 menüpont

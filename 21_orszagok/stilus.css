@@ -1,0 +1,22 @@
+.kiskep{
+    width: 150px;
+}
+.nagykep{
+    width: 50%;
+}
+.keret{
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+    text-align: center;
+    
+}
+#lenyilo{
+    width: 50%;
+    margin: 15px;
+}
+.container{
+    text-align: center;
+}
+button{
+    margin:10px;
+}

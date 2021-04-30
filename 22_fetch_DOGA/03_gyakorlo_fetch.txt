@@ -1,0 +1,20 @@
+﻿index.html
+
+1. szélesség
+https://freegeoip.app/json/
+2. 1 USD hány forint
+https://api.exchangerate-api.com/v4/latest/USD
+6:6-os gridbe bal és jobb oldalra a két feladat
+
+
+index2.html
+1. Bekérünk honap-napot, gombnyomásra, milyen névnapok vannak, bal oldali 6:6-os gridbe
+https://nevnapok.eu 
+
+Menü, github
+
+
+(Viccek:
+https://official-joke-api.appspot.com/jokes/ten )
+
+

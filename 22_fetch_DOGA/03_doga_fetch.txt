@@ -1,0 +1,27 @@
+﻿
+1. index.html-en jelenítsd meg a földrajzi hosszúságot is (szélesség alatt), 
+formázd egyedileg: háttérszín, betűtípus
+https://freegeoip.app/json/     ( Értelmezd!!! )
+
+2. index.html-en jelenítsd meg, hogy egy Euró(EUR) hány forint(HUF) ( USD alatt ), 
+formázd egyedileg: háttérszín, dőlt
+https://api.exchangerate-api.com/v4/latest/USD   ( Értelmezd!!! )
+
+3. index2.html-en jobb oldali gridben kérjen be egy nevet, 
+és gombnyomásra mikor vannak névnapjai,
+formázd egyedileg: szegély, háttérszín
+https://nevnapok.eu   ( Értelmezd!!! )
+
+4. (5-ösért) index2.html-en középen helyezz el gombot,  megnyomására véletlenszerűen
+sorsolj ki egy viccet és írd ki a gomb alá(kérdés, választ) !
+https://official-joke-api.appspot.com/jokes/ten     ( Értelmezd!!! )
+
+5. Töltsd fel githubodra, felhasználóneved.github.io-ra  
+
+
+Github-on lévő lapod linkjét és a zip-et töltsd fel !
+
+
+
+
+

@@ -1,0 +1,16 @@
+header{
+    background-image: url("hatter.jpg");
+    height: 150px;
+    text-align: center;
+}
+.kek{
+    color: blue;
+    font-weight: bold;
+    margin: 10px;
+}
+.arnyekolt{
+    color:blueviolet;
+    box-shadow: 2px 2px black;
+    margin: 5px;
+    padding: 2px;
+}

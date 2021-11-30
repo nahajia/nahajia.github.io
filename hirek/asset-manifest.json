@@ -1,0 +1,21 @@
+{
+  "files": {
+    "app.js": "/hirek/static/js/app.1026b38d.chunk.js",
+    "app.js.map": "/hirek/static/js/app.1026b38d.chunk.js.map",
+    "runtime~app.js": "/hirek/static/js/runtime~app.60df75d2.js",
+    "runtime~app.js.map": "/hirek/static/js/runtime~app.60df75d2.js.map",
+    "static/js/2.6881d4b2.chunk.js": "/hirek/static/js/2.6881d4b2.chunk.js",
+    "static/js/2.6881d4b2.chunk.js.map": "/hirek/static/js/2.6881d4b2.chunk.js.map",
+    "favicon-16.png": "/hirek/favicon-16.png",
+    "favicon-32.png": "/hirek/favicon-32.png",
+    "favicon.ico": "/hirek/favicon.ico",
+    "index.html": "/hirek/index.html",
+    "serve.json": "/hirek/serve.json",
+    "static/js/2.6881d4b2.chunk.js.LICENSE.txt": "/hirek/static/js/2.6881d4b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.60df75d2.js",
+    "static/js/2.6881d4b2.chunk.js",
+    "static/js/app.1026b38d.chunk.js"
+  ]
+}

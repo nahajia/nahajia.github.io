@@ -1,0 +1,21 @@
+{
+  "files": {
+    "app.js": "/14_osztaly_munchkin/static/js/app.c1112b74.chunk.js",
+    "app.js.map": "/14_osztaly_munchkin/static/js/app.c1112b74.chunk.js.map",
+    "runtime~app.js": "/14_osztaly_munchkin/static/js/runtime~app.1863975e.js",
+    "runtime~app.js.map": "/14_osztaly_munchkin/static/js/runtime~app.1863975e.js.map",
+    "static/js/2.0687f7c3.chunk.js": "/14_osztaly_munchkin/static/js/2.0687f7c3.chunk.js",
+    "static/js/2.0687f7c3.chunk.js.map": "/14_osztaly_munchkin/static/js/2.0687f7c3.chunk.js.map",
+    "favicon-16.png": "/14_osztaly_munchkin/favicon-16.png",
+    "favicon-32.png": "/14_osztaly_munchkin/favicon-32.png",
+    "favicon.ico": "/14_osztaly_munchkin/favicon.ico",
+    "index.html": "/14_osztaly_munchkin/index.html",
+    "serve.json": "/14_osztaly_munchkin/serve.json",
+    "static/js/2.0687f7c3.chunk.js.LICENSE.txt": "/14_osztaly_munchkin/static/js/2.0687f7c3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.1863975e.js",
+    "static/js/2.0687f7c3.chunk.js",
+    "static/js/app.c1112b74.chunk.js"
+  ]
+}

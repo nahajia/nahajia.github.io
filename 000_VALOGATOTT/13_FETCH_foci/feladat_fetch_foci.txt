@@ -1,0 +1,22 @@
+Foci, gugliba: football github result json
+(openfootball-os free..., 2020/21, elsõ json, ránnyomni a raw-ra, így szedi le a linket!!!!!)
+
+
+1. 
+https://raw.githubusercontent.com/openfootball/football.json/master/2020-21/at.1.json
+2. w3 fetch, kopi
+3. url-t hívjuk meg a fetch-ben
+4. console.log(y)
+5. .text helyett .json()
+6. console.log helyett függvényt hívjunk meg , paraméternek adjuk át a jsont
+pl. megjelenit(y)
+7. függvényben console log
+8. függvényben table összefûzése, kirakása adott id-jû div-re
+9. bootstrapes table
+10. bootstrapes container, header, navbar
+
+11. meccs eredmény kiírása, ahol undefined tr catch
+
+12. még egy fül a menübe ugyanazok az adatok, csak div-be, grid
+
+

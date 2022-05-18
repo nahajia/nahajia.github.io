@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb keresés</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<style>
+    .kep{
+        height: 200px;
+    }
+    header{
+        text-align: center;
+    }
+</style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Keresés IMDb adatbázisában</h1>
+            <label for="">Írd be a keresendő kifejezést:</label>
+            <center>
+            <input id ="bevitel" type="text" class="form-control" style="width: 60%;">
+        </center>
+            <button class="btn btn-primary" onclick="kereses()">Keresés</button>
+    
+        </header>
+        
+
+
+        <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>Cím</th>
+                <th>Kép</th>
+                
+              </tr>
+            </thead>
+            <tbody id="ide">
+     
+            </tbody>
+          </table>       
+      </div> 
+ 
+
+
+
+
+
+
+ 
+
+
+
+<script>
+
+function kereses(){
+
+    var keresendo=document.getElementById("bevitel").value;
+
+    console.log(keresendo);
+    fetch("https://imdb8.p.rapidapi.com/auto-complete?q="+keresendo, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "64c0aa9acbmsh82d039a10b2f2e5p1f7930jsn12c797112664",
+		"x-rapidapi-host": "imdb8.p.rapidapi.com"
+	}
+})
+.then(response => response.json())
+.then(y => megjelenites(y));
+
+function megjelenites(adatok){
+    console.log(adatok);
+    var sz='';
+    for (elem of adatok.d){
+        //sz+=elem.l;
+        sz+='<tr>';
+        sz+='<td>'+elem.l;           
+        sz+='</td>';
+        sz+='<td>';
+        try{    
+        sz+='<img src="'+elem.i.imageUrl+'" alt="'+elem.l+'" class="kep"  >      ';
+        }
+        catch{}
+        sz+='</td>';
+        sz+='</tr>';   
+    }
+    document.getElementById("ide").innerHTML=sz;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

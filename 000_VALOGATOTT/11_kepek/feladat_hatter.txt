@@ -1,0 +1,35 @@
+https://raw.githubusercontent.com/klinker41/android-dreamscene/master/backgrounds.json
+
+https://gist.githubusercontent.com/nicholaschum/774e60d8c43079be1da3/raw/6acfe0c3eb076274fb12d09b08c128194f61610e/wallpapers.json
+
+https://gist.githubusercontent.com/embarq/1a71f161de06cafa5613f244c666838a/raw/9bcd7446b19befe75a87021b67f5885b53269c0d/heroes.json
+
+1. mindhárom json-t letölteni,átnevezni .js-re, eléírni var adatok=  
+2. html5 lap: nyito.html, hivatkozások:  bootstrap4
+3. backgrounds.js-t megjeleníteni, képeket, divben (createelemet, appendchild)
+4. setattribute imgtumbnail osztály
+5. div container, grid- row, 6-os
+6. container-be: header-cím(w3 html semantics)
+7. cím alá navbar, BS4 navbar, collapsing
+
+8. nyito2.html(kopi), wallpapers-t megjeleníteni
+9. 4-es gridben
+10. árnyékot a képre , box-shadow
+11. kép alá szöveg, egyedi class: fantasy, dõlt, méret
+
+12. nyito3.html(kopi), heroes-t megjeleníteni
+13. 3-as grid
+14. alá a hõs nevét
+15. alá gombot, primary-t
+16. kattintásra, függvény (addeventlistener)
+17. a gomb id-je a sorszam, alert
+18. modális beágyazása, törzs id
+19. modális gomb class-ok beállítása, setattribute
+20. saját függvényen belül részletes adatok, innerhtml+= , img is
+
+21. navbar összeallítása, 3 helyen ugyanaz
+
+22. Github-ra nahajia.github.io-ba, almappába, tesztelés nahajia.github.io/almappa
+
+
+ 

@@ -1,0 +1,29 @@
+body{
+    background-color: antiquewhite;
+}
+
+#vicchelye{
+    font-size: 30px;
+    font-family: papyrus;
+    font-weight: bold;
+
+}
+img{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#keret{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gomb{
+    width: 200px;
+    margin:20px;
+    font-size: 30px;
+}
+
+
+
+

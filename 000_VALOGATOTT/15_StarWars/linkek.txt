@@ -1,0 +1,1 @@
+https://github.com/WildCodeSchool/starwars-api/blob/master/db.json

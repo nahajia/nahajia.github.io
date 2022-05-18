@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sw.js"></script>
+    
+</head>
+<body>
+
+    <div class="container mt-3">
+        <h2>Star Wars Characters</h2>           
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <td>
+                    Szereplő
+              </td>
+              <td>
+                Kép
+             </td>
+             <td>
+                Kép2
+             </td>
+             <td>
+              Kép3
+           </td>
+            </tr>
+          </thead>
+          <tbody id="tablazatid">
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <img src="" alt="proba" id="kep" style="height:600px">
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+
+
+    <script>
+
+        var sz="";
+        for(elem of adatok.characters)
+        {
+            sz+='<tr>'
+            sz+='<td>'
+            sz+=elem.name
+            sz+='</td>'
+            sz+='<td>'
+            sz+='<a href="'+elem.pic+'" target="_blank">'
+            sz+='<img src="'+ elem.pic+ '" style="height:300px">'
+            sz+='</a>'
+            sz+='</td>'
+            //-------------------------------------------------------------HARMADIK OSZLOP
+            sz+='<td>'
+
+            sz+='<img src="'+ elem.pic+ '" style="height:300px">'
+
+            sz+='<br>'
+            sz+='<button type="button" id="'+elem.pic+'"  onclick="kepmegnyitas(this.id)" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">'
+            sz+='Nagyítás'
+            sz+='</button>'
+            sz+='</td>'
+            //-------------------------------------------------------------4. OSZLOP
+            sz+='<td>'
+
+            sz+='<img src="'+ elem.pic+ '" style="height:300px" id="'+elem.pic+'"  onclick="kepmegnyitas(this.id)" data-bs-toggle="modal" data-bs-target="#myModal" >'
+
+            sz+='<br>'
+            //sz+='<button type="button" id="'+elem.pic+'"  onclick="kepmegnyitas(this.id)" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">'
+            //sz+='Nagyítás'
+            //sz+='</button>'
+            sz+='</td>'
+
+            sz+='</tr>'
+            
+        }
+        document.getElementById("tablazatid").innerHTML=sz
+
+
+function kepmegnyitas(kepneve){
+  document.getElementById("kep").src=kepneve;
+}
+
+
+
+    </script>
+
+
+</body>
+</html>

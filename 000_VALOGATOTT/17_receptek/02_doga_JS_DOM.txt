@@ -1,0 +1,21 @@
+Receptek:
+https://raw.githubusercontent.com/raywenderlich/recipes/master/Recipes.json
+
+1. töltsd le a jsont, nevezd át js-nek, írd elé var adatok= 
+ (így az 'adatok' egy tömb)
+2. Listázd ki konzolra a receptek adatait!
+3. Listázd ki felsorolásban a receptek neveit! 
+(Ha a json-t változtatnánk, akkor is mûködjön, 
+használd a createelement, appendchild parancsokat!)
+4. Listázd ki a receptek nevét egy táblázatban, elsõ oszlopában
+( ne createelementet használj, hanem szöveget)!
+A táblázat bootstrapes legyen, bármelyik táblázat osztály jó!
+5. Adj az oszlopnak osztályt, állíts be rá: 
+egyedi betûtípust, betûméretet, betûszínt, háttérszínt!
+6. Listázd ki a második oszlopban a receptek elkészítését!
+7. A harmadik oszlopban a recept képe legyen a táblázatban.
+8. A képre állíts be osztályt, kép méretét állítsd át tetszõlegesen!
+9. A táblázatnak legyen fejléce: recept neve, elkészítés, kép
+10. Az elkészítési idõket add össze, és az összeget írasd ki 4. oszlopban!
+
+

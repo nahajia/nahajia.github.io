@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="row" id="keret">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" id="modalisfej" style="margin: auto;"></h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body" id="modalistest" style="text-align: center;">
+              
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezár</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    <script>
+        fetch("http://raw.githubusercontent.com/Laboratoria/LIM011-data-lovers/master/src/data/potter/potter.json")
+        .then(x => x.json())
+        .then(y => megjelenit(y))
+
+        let tomb = []
+        function megjelenit(adatok){
+            tomb = adatok
+            console.log(adatok)
+            var sz = ""
+
+            var db = 0
+            for (const elem of adatok) {
+                sz += '<div class="col-sm-4">'
+                
+                sz += '<div style="border: 2px solid black; box-shadow: 3px 3px 3px; margin: 7px; padding: 10px; text-align: center">'
+                //sz += '<img src="'+elem.image+'" alt="" class="img-fluid">'
+                sz += `<img src="${elem.image}" alt="" class="img-fluid">`
+
+                sz += `<p> ${elem.name} </p>`
+
+                sz += `<button id="${db}" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" onclick="kiir(this.id)">
+                        Részletek
+                        </button>`
+
+                sz += '</div>'
+
+                sz += '</div>'
+                db++
+            }
+            document.getElementById("keret").innerHTML = sz
+            
+        }
+        function kiir(db){
+            //alert("hello")
+            //alert(db)
+            document.getElementById("modalisfej").innerHTML = tomb[db].name
+            var sz = ""
+            sz += `<img src="${tomb[db].image}" alt="" class="img-fluid">`
+            sz += `<p> Ház: ${tomb[db].house} </p>`
+            sz += `<p> Szinész: ${tomb[db].actor} </p>`
+
+            
+            document.getElementById("modalistest").innerHTML = sz
+        }
+    </script>
+    
+</body>
+</html>
